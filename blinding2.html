@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            padding: 8px;
+            font-size: 1em;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .radio-group label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section-title">ข้อมูลผู้ลงทะเบียน</div>
+    <div class="form-group">
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="male"> นาย</label>
+            <label><input type="radio" name="gender" value="female"> นาง</label>
+            <label><input type="radio" name="gender" value="miss"> นางสาว</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>ชื่อ</label>
+        <input type="text" placeholder="ชื่อ">
+    </div>
+    <div class="form-group">
+        <label>นามสกุล</label>
+        <input type="text" placeholder="นามสกุล">
+    </div>
+    <div class="form-group">
+        <label>เลขประจำตัวประชาชน</label>
+        <input type="text" placeholder="เลขประจำตัวประชาชน">
+    </div>
+    <div class="form-group">
+        <label>ประสบการณ์การตัด (ปี)</label>
+        <input type="number" placeholder="ประสบการณ์การตัด (ปี)">
+    </div>
+
+    <div class="section-title">ที่อยู่สำหรับติดต่อ</div>
+    <div class="form-group">
+        <label>จังหวัด</label>
+        <input type="text" placeholder="จังหวัด">
+    </div>
+    <div class="form-group">
+        <label>อำเภอ</label>
+        <input type="text" placeholder="อำเภอ">
+    </div>
+    <div class="form-group">
+        <label>ตำบล</label>
+        <input type="text" placeholder="ตำบล">
+    </div>
+    <div class="form-group">
+        <label>รหัสไปรษณีย์</label>
+        <input type="text" placeholder="รหัสไปรษณีย์">
+    </div>
+    <div class="form-group">
+        <label>รายละเอียดที่อยู่</label>
+        <textarea placeholder="รายละเอียดที่อยู่" rows="3"></textarea>
+    </div>
+
+    <div class="section-title">ประเภทนักตัด</div>
+    <div class="form-group">
+        <div class="radio-group">
+            <label><input type="radio" name="cutterType" value="agricultural"> เกษตรกร</label>
+            <label><input type="radio" name="cutterType" value="teamLeader"> หัวหน้าทีมนักตัด</label>
+            <label><input type="radio" name="cutterType" value="skilledWorker"> มือดัดอิสระ</label>
+            <label><input type="radio" name="cutterType" value="companyWorker"> มือดัดของผู้ประกอบการ/โรงคัดบรรจุ/ส่ง</label>
+        </div>
+    </div>
+
+    <div class="section-title">การฝึกอบรมเรื่องการตัดทุเรียน</div>
+    <div class="form-group">
+        <div class="radio-group">
+            <label><input type="radio" name="training" value="never"> ไม่เคย</label>
+            <label><input type="radio" name="training" value="experienced"> เคย</label>
+        </div>
+    </div>
+
+    <div class="section-title">ใบรับรองผ่านการฝึกอบรมการตัดทุเรียน</div>
+    <div class="form-group">
+        <div class="radio-group">
+            <label><input type="radio" name="certification" value="none"> ไม่เคย</label>
+            <label><input type="radio" name="certification" value="certified"> เคย</label>
+        </div>
+    </div>
+
+    <div class="section-title">ประสบการณ์การทำงาน</div>
+    <div class="form-group">
+        <label>งานที่เคยทำ (ถ้ามี)</label>
+        <textarea placeholder="โปรดระบุประสบการณ์การทำงานที่ผ่านมา" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label>ความสามารถพิเศษ</label>
+        <input type="text" placeholder="เช่น การใช้เครื่องมือเฉพาะ หรืออื่นๆ">
+    </div>
+
+    <div class="section-title">ข้อมูลการฝึกอบรม</div>
+    <div class="form-group">
+        <label>หลักสูตรการฝึกอบรมที่เคยเข้าร่วม (ถ้ามี)</label>
+        <textarea placeholder="ระบุหลักสูตรการฝึกอบรมที่เคยเข้าร่วม" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label>วันเริ่มต้นการฝึกอบรม</label>
+        <input type="date">
+    </div>
+    <div class="form-group">
+        <label>วันสิ้นสุดการฝึกอบรม</label>
+        <input type="date">
+    </div>
+
+</body>
+</html>
